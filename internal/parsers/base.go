@@ -4,16 +4,8 @@ import (
 	"fmt"
 )
 
-// A general interface for any of the parser implementations
-type LogParser interface {
-	Parse(dir string) (string, error)
-}
-
+// A general type for any of the parser implementations
 type ParserFunc func(dir string) (string, error)
-
-func (pf ParserFunc) Parse(dir string) (string, error) {
-	return pf(dir)
-}
 
 // A registry for parsers
 var parserMap = map[string]ParserFunc{
