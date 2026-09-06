@@ -209,8 +209,8 @@ These are added as their own roadmap items in Section 4 rather than blocking cor
 > Ordered, each item scoped to roughly one sitting. Will be refined as design decisions land.
 
 1. [x] Finalize `LogReader` interface and `RollEvent` schema (Section 2.1–2.2)
-2. [ ] Set up Go module + package structure (Section 3.1)
-3. [ ] Acquire/produce sample Roll20 chat log export(s) for development fixtures
+2. [x] Set up Go module + package structure (Section 3.1)
+3. [x] Acquire/produce sample Roll20 chat log export(s) for development fixtures
 4. [ ] Implement Roll20 `LogReader`: parse saved chat-log HTML into `[]RollEvent`
 5. [ ] Unit tests for the Roll20 reader against fixture files
 6. [ ] Design and implement the worker pool: bounded goroutines pulling file paths from a job channel, each invoking the appropriate `LogReader`
